@@ -17,7 +17,7 @@ from the past 24 hours.
 # Read Configuration File
 parser = configparser.ConfigParser()
 script_path = pathlib.Path(__file__).parent.resolve()
-config_file = "configuration.conf"
+config_file = "configuration.conf" #this is important 
 parser.read(f"{script_path}/{config_file}")
 
 # Configuration Variables

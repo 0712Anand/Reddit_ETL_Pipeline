@@ -11,7 +11,7 @@ terraform {
 
 # Configure AWS provider
 provider "aws" {
-    profile = "admin-1" 
+    profile = "admin-1" # this is the sso account profile and u need to add it
     region = var.aws_region
 }
 
