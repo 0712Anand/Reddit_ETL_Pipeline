@@ -76,16 +76,12 @@ resource "aws_s3_bucket_acl" "s3_reddit_bucket_acl" {
   bucket = aws_s3_bucket.reddit_bucket.id
   acl    = "private"
 
-  # NOTE: TO BE TESTED
-  # Add by Yuzhen, start
   # Depends_on resource to avoid error "AccessControlListNotSupported: The bucket does not allow ACLs"
   depends_on = [aws_s3_bucket_ownership_controls.s3_bucket_acl_ownership]
   # Add by Yuzhen, end
 
 }
 
-# NOTE: TO BE TESTED
-# Add by Yuzhen, start
 # Resource to avoid error "AccessControlListNotSupported: The bucket does not allow ACLs"
 resource "aws_s3_bucket_ownership_controls" "s3_bucket_acl_ownership" {
   bucket = aws_s3_bucket.reddit_bucket.id
@@ -93,4 +89,4 @@ resource "aws_s3_bucket_ownership_controls" "s3_bucket_acl_ownership" {
     object_ownership = "ObjectWriter"
   }
 }
-# Add by Yuzhen, end
+# add by Anand
