@@ -20,9 +20,10 @@ Gain insights into discussions, trends, and sentiment in the `r/dataengineering`
 ```mermaid
 flowchart TD
     A[Reddit API] --> B[Extract Script]
-    B --> C[S3 (Raw Data)]
-    C --> D[Redshift (Staging & Transformation)]
+    B --> C[S3 - Raw Data]
+    C --> D[Redshift - Staging and Transformation]
     D --> E[Google Data Studio via Redshift Connector]
+```
 
 # 🚀 Quick Start
 ## 1. Clone the Repo
