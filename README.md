@@ -24,7 +24,6 @@ flowchart TD
     C --> D[Redshift (Staging & Transformation)]
     D --> E[Google Data Studio via Redshift Connector]
 
-```
 # 🚀 Quick Start
 ## 1. Clone the Repo
 ```bash
