@@ -18,7 +18,7 @@ Gain insights into discussions, trends, and sentiment in the `r/dataengineering`
 ## 🏗️ Architecture Overview
 
 ```mermaid
-Flowchart 
+flowchart TD
     A[Reddit API] --> B[Extract Script]
     B --> C[S3 (Raw Data)]
     C --> D[Redshift (Staging & Transformation)]
